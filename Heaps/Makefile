@@ -5,4 +5,4 @@ heaps.o: heaps.h heaps.cpp
 	g++ -g -c heaps.cpp
 
 clean:
-	rm *.out *.o
+	rm *.out *.o main
