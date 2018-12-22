@@ -1,11 +1,6 @@
 #include <iostream>
 
-int main() {
-  int n;
-  std::cin>>n;
-  int a[n];
-
-  for(int i=0;i<n;i++) std::cin>>a[i];
+void insertion_sort(int a[], int n) { 
 
   // insertion sort
   for(int i=1;i<n;i++) {
@@ -18,6 +13,18 @@ int main() {
 
     a[j+1] = key;
   }
+
+}
+
+int main() {
+  int n;
+  std::cin>>n;
+  int a[n];
+
+  for(int i=0;i<n;i++) std::cin>>a[i];
+
+  
+  insertion_sort(a, n);
 
   for(int i=0;i<n;i++) std::cout<<a[i]<<" ";
   std::cout<<std::endl;
