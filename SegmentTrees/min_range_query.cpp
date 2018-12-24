@@ -49,10 +49,10 @@ int main() {
   int total_nodes;
 
   //Height of segment tree 
-  int x = (int)(ceil(log2(n))) + 1;  
+  int x = (int)(ceil(log2(n)));  
   
   // Maximum size of segment tree 
-  int max_size = (int)pow(2, x) - 1;
+  int max_size = 2*(int)pow(2, x) - 1;
 
   total_nodes = max_size;
 
