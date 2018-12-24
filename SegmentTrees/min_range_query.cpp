@@ -49,10 +49,10 @@ int main() {
   int total_nodes;
 
   //Height of segment tree 
-  int x = (int)(ceil(log2(n)));  
+  int x = (int)(ceil(log2(n))) + 1;  
   
   // Maximum size of segment tree 
-  int max_size = 2*(int)pow(2, x) - 1;
+  int max_size = (int)pow(2, x) - 1;
 
   total_nodes = max_size;
 
@@ -66,7 +66,7 @@ int main() {
 
   // for(int i = 0;i<total_nodes;i++) std::cout<<st[i]<<" ";
 
-  std::cout<<std::endl;
+  //std::cout<<std::endl;
 
   // range query, check
   std::cout<<"Enter the range: ";
