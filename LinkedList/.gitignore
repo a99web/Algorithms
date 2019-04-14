@@ -1,0 +1,4 @@
+*.o
+*.out
+nth_node
+reverse
