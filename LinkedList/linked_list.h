@@ -5,6 +5,9 @@ struct LinkedList {
 
 typedef struct LinkedList LinkedList;
 
+// create list
+LinkedList* create_list();
+
 // add's node to the list
 void add_node(LinkedList*, LinkedList*);
 
