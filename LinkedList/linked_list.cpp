@@ -8,6 +8,7 @@ void add_node(LinkedList *head, LinkedList *node) {
     p = curr;
     curr = curr->next;
   }
+
   p->next = node;
   return;
 }

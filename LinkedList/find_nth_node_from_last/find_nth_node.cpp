@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-#include "linked_list.h"
+#include "../linked_list.h"
 
 // program to find nth node from the end
 
@@ -44,7 +44,12 @@ int main() {
 
   print_list(head);
 
-  LinkedList* n = find_nth_node(head, 1);
-  std::cout<<n->data<<std::endl;
+  int N;
+  printf("Enter n: ");
+  scanf("%d", &N);
+
+  LinkedList* node = find_nth_node(head, N);
+  if(node) std::cout<<node->data<<std::endl;
+  else printf("Position not found\n");
   return 0;
 }
