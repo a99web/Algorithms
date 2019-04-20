@@ -3,6 +3,7 @@
 
 LinkedList* reverse_list(LinkedList *head) {
   LinkedList *prev = NULL, *curr = head, *next;
+
   while(curr) {
     next = curr->next;
     curr->next = prev;
