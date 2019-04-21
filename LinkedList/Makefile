@@ -11,5 +11,8 @@ linked_list.o: linked_list.h linked_list.c
 nth_node: find_nth_node/find_nth_node.c linked_list.o
 	gcc -o nth_node find_nth_node/find_nth_node.c linked_list.o
 
+loop: check_for_loop/loop.c linked_list.o
+	gcc -o loop check_for_loop/loop.c linked_list.o
+
 clean:
 	rm *.o nth_node reverse
