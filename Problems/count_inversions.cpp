@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int merge(vector<int>& arr, int l, int mid, int h) {
+int count_inversions(vector<int>& arr, int l, int mid, int h) {
   vector<int> temp(h - l + 1);
 
   int i, j, k;
@@ -45,7 +45,7 @@ int count_inversions(vector<int>& arr, int l, int h) {
     inv_count += count_inversions(arr, l, mid);
     inv_count += count_inversions(arr, mid+1, h);
 
-    inv_count += merge(arr, l, mid, h);
+    inv_count += count_inversions(arr, l, mid, h);
 
   }
 
